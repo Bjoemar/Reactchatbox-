@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HELLOW WORLD</title>
+</head>
+<script src="http://192.168.254.142:5000/socket.io/socket.io.js"></script>
+<body>
+	<h1>HELLO WORLD</h1>
+</body>
+<script type="text/javascript">
+	var socket = io();
+	socket.on('FromAPI',function(data){
+		console.log('CONNECTED');
+	})
+</script>
+</html>
